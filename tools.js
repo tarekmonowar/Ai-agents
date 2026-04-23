@@ -19,5 +19,10 @@ export async function list_open_orders(customer_id) {
       status: "pending",
       amount: 80,
     },
+    {
+      order_id: "ORD125",
+      status: "shipped",
+      amount: 900,
+    },
   ];
 }

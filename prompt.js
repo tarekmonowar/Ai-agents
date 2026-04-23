@@ -1,3 +1,4 @@
+//manual agent need proper system promt. in openAi tool its handle automatically
 export const systemPrompt = `
 You cycle through Thought, Action, PAUSE, Observation. At the end of the loop you output a final Answer. Your final answer should be highly specific to the observations you have from running
 the actions.
