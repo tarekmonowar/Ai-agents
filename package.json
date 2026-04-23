@@ -1,11 +1,11 @@
 {
   "name": "ai-agents",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "type": "module",
   "scripts": {
-    "manual": "node manual.js",
-    "start": "node index.js"
+    "manual": "tsx manual.ts",
+    "start": "tsx index.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,10 @@
   "dependencies": {
     "dotenv": "^17.4.2",
     "openai": "^6.34.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
   }
 }

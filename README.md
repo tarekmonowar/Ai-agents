@@ -13,12 +13,14 @@ This project is for learning AI agents and automation in two simple ways:
 
 ## Project structure
 
-- `manual.js`: manual agent loop with Thought -> Action -> Observation flow
-- `prompt.js`: system prompt for manual ReAct behavior
-- `manualTools.js`: tools used by the manual agent (`getLocation`, `getCurrentWeather`)
-- `index.js`: OpenAI Responses API example with function tool calling
-- `tools.js`: CRM-style tool functions (`get_customer_profile`, `list_open_orders`)
-- `config.js`: OpenAI client and environment variable validation
+- `manual.ts`: manual agent loop with Thought -> Action -> Observation flow
+- `prompt.ts`: system prompt for manual ReAct behavior
+- `manualTools.ts`: tools used by the manual agent (`getLocation`,
+  `getCurrentWeather`)
+- `index.ts`: OpenAI Responses API example with function tool calling
+- `tools.ts`: CRM-style tool functions (`get_customer_profile`,
+  `list_open_orders`)
+- `config.ts`: OpenAI client and environment variable validation
 
 ## Setup
 
@@ -44,7 +46,8 @@ AI_MODEL=your_model_name
 npm run manual
 ```
 
-This runs a custom loop where the model outputs an `Action`, your code executes the function, and then sends an `Observation` back.
+This runs a custom loop where the model outputs an `Action`, your code executes
+the function, and then sends an `Observation` back.
 
 ### 2) OpenAI Responses API tool calling
 
@@ -52,7 +55,10 @@ This runs a custom loop where the model outputs an `Action`, your code executes 
 npm start
 ```
 
-This runs tool calling with `openai.responses.create()`, executes requested functions, sends `function_call_output`, and gets the final answer.
+This runs tool calling with `openai.responses.create()`, executes requested
+functions, sends `function_call_output`, and gets the final answer.
+
+Both scripts run TypeScript files directly using `tsx`.
 
 ## Why this repo is useful
 
