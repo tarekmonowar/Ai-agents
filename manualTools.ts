@@ -1,3 +1,4 @@
+//just simple functions to return some data for testing purposes. In a real application, these would likely be making API calls to get real data.
 export async function getCurrentWeather() {
   const weather = {
     temperature: "72",

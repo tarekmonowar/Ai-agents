@@ -9,10 +9,6 @@ const availableFunctions = {
 };
 
 /**
- * Goal - build an agent that can answer any questions that might require knowledge about my current location and the current weather at my location.
- */
-
-/**
  PLAN:
  1. Design a well-written ReAct prompt
  2. Build a loop for my agent to run in.
